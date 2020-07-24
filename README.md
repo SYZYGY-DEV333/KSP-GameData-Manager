@@ -11,6 +11,9 @@ Dependencies:
 
 `go build gamedatamanager.go`
 
+Cross compile Linux->Windows:
+`GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -ldflags -H=windowsgui gamedatamanager.go`
+
 ## Installing
 Put the `gamedatamanager` excecutable in the KSP root directory. Create a folder called `GameArchive`.
 
